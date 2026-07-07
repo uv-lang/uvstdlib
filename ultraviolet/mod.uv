@@ -1,0 +1,30 @@
+<lib>
+    <ffi>
+        <name>sin</name>
+
+        <dll>
+            <str>
+                <concat$>
+                    uvstdlib.
+                    <dll.suffix />
+                </concat$>
+            </str>
+        </dll>
+
+        <func>
+            <str>sin</str>
+        </func>
+
+        <args>
+            <f64 />
+        </args>
+
+        <returns>
+            <f64 />
+        </returns>
+    </ffi>
+
+    <exports>
+        <sin />
+    </exports>
+</lib>

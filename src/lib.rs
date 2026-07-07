@@ -1,14 +1,26 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
+/// Standard Ultraviolet library
+
+/// STD sin function
+pub fn sin(x: f64) -> f64 {
+    x.sin()
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+/// STD cos function
+pub fn cos(x: f64) -> f64 {
+    x.cos()
+}
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+/// STD tan function
+pub fn tan(x: f64) -> f64 {
+    x.tan()
+}
+
+/// STD cot function
+pub fn cot(x: f64) -> f64 {
+    1.0 / x.tan()
+}
+
+/// STD power function
+pub fn pow(x: f64, n: f64) -> f64 {
+    x.powf(n)
 }
