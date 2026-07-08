@@ -1,18 +1,16 @@
-<lib>
+<mod>
     <ffi>
         <name>sin</name>
 
         <dll>
-            <str>
-                <concat$>
-                    uvstdlib.
-                    <dll.suffix />
-                </concat$>
-            </str>
+            <concat$>
+                <str>uvstdlib</str>
+                <dll.suffix />
+            </concat$>
         </dll>
 
         <func>
-            <str>sin</str>
+            <str>uv_sin</str>
         </func>
 
         <args>
@@ -24,7 +22,7 @@
         </returns>
     </ffi>
 
-    <exports>
+    <export>
         <sin />
-    </exports>
-</lib>
+    </export>
+</mod>
