@@ -4,6 +4,7 @@
 
         <dll>
             <concat$>
+                <dll.prefix />
                 <str>uvstdlib</str>
                 <dll.suffix />
             </concat$>
